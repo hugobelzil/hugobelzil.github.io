@@ -1,0 +1,44 @@
+title: Hugo Belzil
+name: Hugo Belzil
+email: ""
+description: >-
+  Academic website for Hugo Belzil.
+url: "https://hugobelzil.github.io"
+baseurl: ""
+
+repository: hugobelzil/hugo-belzil-website
+github_username: hugobelzil
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      math: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md

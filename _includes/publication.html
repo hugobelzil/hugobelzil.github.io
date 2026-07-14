@@ -1,0 +1,18 @@
+<article class="publication">
+  <div class="publication-year">{{ publication.year }}</div>
+  <div>
+    <h2>{{ publication.title }}</h2>
+    <p class="muted">{{ publication.authors }}</p>
+    <p><em>{{ publication.venue }}</em></p>
+    {% if publication.abstract %}
+      <p>{{ publication.abstract }}</p>
+    {% endif %}
+    {% if publication.links %}
+      <div class="button-row">
+        {% for link in publication.links %}
+          <a class="text-button" href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

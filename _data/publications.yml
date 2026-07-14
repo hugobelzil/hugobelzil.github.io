@@ -1,0 +1,10 @@
+- title: "A Sample Paper with Mathematical Notation"
+  authors: "Hugo Belzil"
+  venue: "Working paper"
+  year: 2026
+  links:
+    - label: PDF
+      url: "#"
+    - label: Code
+      url: "#"
+  abstract: "Replace this entry with your publication details. The site supports inline math such as $\\alpha + \\beta$ and display math on pages that enable MathJax."
