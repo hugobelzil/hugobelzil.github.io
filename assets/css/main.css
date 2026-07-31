@@ -309,6 +309,133 @@ a:hover {
   border-top: 1px solid var(--border);
 }
 
+.projects-list {
+  display: grid;
+  gap: 58px;
+}
+
+.project-entry {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-entry:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.project-entry--brief {
+  grid-template-columns: minmax(0, 270px) minmax(0, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.project-entry--brief .project-figure {
+  width: min(270px, 100%);
+  padding: 8px;
+}
+
+.project-entry--brief .project-figure img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-entry--brief .project-copy {
+  max-width: var(--text-width);
+}
+
+.project-entry--reverse {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.95fr);
+}
+
+.project-entry--reverse .project-figure {
+  grid-column: 2;
+}
+
+.project-entry--reverse .project-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.project-figure {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  box-shadow:
+    0 6px 18px rgb(0 0 0 / 0.08),
+    0 18px 42px rgb(0 0 0 / 0.08);
+}
+
+.project-image-crop {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-figure--eikonal .project-image-crop {
+  aspect-ratio: 2.5 / 1;
+}
+
+.project-figure--garch .project-image-crop {
+  aspect-ratio: 2.25 / 1;
+}
+
+.project-figure img {
+  display: block;
+  width: 176%;
+  max-width: none;
+  height: auto;
+}
+
+.project-copy {
+  min-width: 0;
+}
+
+.project-copy h2 {
+  margin-top: 0;
+}
+
+.project-meta {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.project-equation {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.project-links a:hover {
+  border-color: var(--link);
+  color: var(--link);
+  text-decoration: none;
+}
+
 .content code {
   padding: 0.1em 0.3em;
   border-radius: 3px;
@@ -428,6 +555,22 @@ a:hover {
 
   .research-divider {
     margin: 38px 0;
+  }
+
+  .project-entry,
+  .project-entry--reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-entry--reverse .project-figure,
+  .project-entry--reverse .project-copy {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .project-entry {
+    padding-bottom: 42px;
   }
 
   .publication,

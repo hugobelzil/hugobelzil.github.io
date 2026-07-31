@@ -13,6 +13,9 @@ edit and deploy.
 - Navigation: `_data/navigation.yml`
 - Site settings: `_config.yml`
 
+Project reports live in `assets/reports/`, and project images live in
+`assets/img/projects/`.
+
 ## LaTeX
 
 Set `math: true` in a page or post front matter to load MathJax.

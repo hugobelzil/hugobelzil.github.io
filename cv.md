@@ -1,27 +1,19 @@
 ---
 title: Curriculum Vitae
-subtitle: A concise web CV. Link a PDF version when you have one.
 permalink: /cv/
 ---
 
-## Appointments
-
-- Position, Department, Institution, years.
-
 ## Education
 
-- Degree, Field, Institution, year.
+- MSc Quantitative Finance, ETH Zurich & UZH, 2025-2027
+- BSc Mathematics, McGill University, 2021-2025
 
-## Research Fields
+## Experience
+- Quantitative Analyst Intern, Verso Energy, Jun 2026 - Sep 2026
+- Undergraduate Research assistant, McGill University, May 2025 - Aug 2025
 
-- Field one.
-- Field two.
-- Field three.
+## Interests
 
-## Awards and Grants
-
-- Award or grant, year.
-
-## Service
-
-- Refereeing, committees, conference organization, or department service.
+- Statistics (copulas, extreme-value theory, quantitative risk management,...)
+- Option pricing (PDE methods, SDEs, jump models,...)
+- Applied mathematics, ML (Dynamic Programming, optimization,...)

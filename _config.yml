@@ -43,3 +43,5 @@ exclude:
   - node_modules
   - vendor
   - README.md
+  - tmp
+  - rubyinstaller-devkit-*.exe
